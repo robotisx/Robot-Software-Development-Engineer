@@ -17,10 +17,8 @@ def forward_kinematics(theta1, theta2, theta3, l1=1.5, l2=1.2, l3=0.8):
     
     positions = [(0, 0), (x1, y1), (x2, y2), (x3, y3)]
     
-    # 좌표 출력
-    print("Link Positions:")
-    for i, (x, y) in enumerate(positions):
-        print(f"Joint {i}: ({x:.2f}, {y:.2f})")
+    # End Effector좌표 출력
+    print(f"End Effector: ({x3:.2f}, {y3:.2f})")
     
     return positions, (x3, y3)
 
